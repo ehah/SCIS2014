@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="ASCII"?>
+<instance:SystemInstance xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aadl2="http://aadl.info/AADL/2.0" xmlns:instance="http://aadl.info/AADL/2.0/instance" xmi:id="_4ZgkYBEUEeS2xf4ZJVwONA" name="sysMA_impl_Instance" category="system">
+  <componentInstance xmi:id="_4Zk10BEUEeS2xf4ZJVwONA" name="RBC" category="device">
+    <featureInstance xmi:id="_4Zlc4BEUEeS2xf4ZJVwONA" name="req" dstConnectionInstance="_4ZsKkBEUEeS2xf4ZJVwONA">
+      <feature xsi:type="aadl2:DataPort" href="../packages/MA.aadl#//@ownedPublicSection/@ownedClassifier.10/@ownedDataPort.0"/>
+    </featureInstance>
+    <featureInstance xmi:id="_4ZmrABEUEeS2xf4ZJVwONA" name="ma" srcConnectionInstance="_4ZqVYBEUEeS2xf4ZJVwONA" direction="out">
+      <ownedPropertyAssociation xmi:id="_4Z7bIBEUEeS2xf4ZJVwONA">
+        <property href="../../Plugin_Resources/BLESS.aadl#BLESS::Typed"/>
+        <ownedValue xmi:id="_4Z8CMBEUEeS2xf4ZJVwONA">
+          <ownedValue xsi:type="aadl2:StringLiteral" xmi:id="_4Z8CMREUEeS2xf4ZJVwONA" value="array [CTCS_Types::MA_Size] of CTCS_Types::Segment"/>
+        </ownedValue>
+      </ownedPropertyAssociation>
+      <ownedPropertyAssociation xmi:id="_4Z8CMhEUEeS2xf4ZJVwONA">
+        <property href="../../Plugin_Resources/Data_Model.aadl#Data_Model::Data_Representation"/>
+        <ownedValue xmi:id="_4Z8CMxEUEeS2xf4ZJVwONA">
+          <ownedValue xsi:type="aadl2:NamedValue" xmi:id="_4Z8CNBEUEeS2xf4ZJVwONA">
+            <namedValue xsi:type="aadl2:EnumerationLiteral" href="../../Plugin_Resources/Data_Model.aadl#//@ownedProperty.4/@ownedPropertyType/@ownedLiteral.0"/>
+          </ownedValue>
+        </ownedValue>
+      </ownedPropertyAssociation>
+      <ownedPropertyAssociation xmi:id="_4Z8CNREUEeS2xf4ZJVwONA">
+        <property href="../../Plugin_Resources/Data_Model.aadl#Data_Model::Base_Type"/>
+        <ownedValue xmi:id="_4Z8CNhEUEeS2xf4ZJVwONA">
+          <ownedValue xsi:type="aadl2:ListValue" xmi:id="_4Z8CNxEUEeS2xf4ZJVwONA">
+            <ownedListElement xsi:type="aadl2:ClassifierValue" xmi:id="_4Z8COBEUEeS2xf4ZJVwONA">
+              <classifier xsi:type="aadl2:DataType" href="../packages/CTCS_Types.aadl#CTCS_Types::Segment"/>
+            </ownedListElement>
+          </ownedValue>
+        </ownedValue>
+      </ownedPropertyAssociation>
+      <ownedPropertyAssociation xmi:id="_4Z8COREUEeS2xf4ZJVwONA">
+        <property href="../../Plugin_Resources/Data_Model.aadl#Data_Model::Dimension"/>
+        <ownedValue xmi:id="_4Z8pQBEUEeS2xf4ZJVwONA">
+          <ownedValue xsi:type="aadl2:ListValue" xmi:id="_4Z8pQREUEeS2xf4ZJVwONA">
+            <ownedListElement xsi:type="aadl2:NamedValue" xmi:id="_4Z8pQhEUEeS2xf4ZJVwONA">
+              <namedValue xsi:type="aadl2:PropertyConstant" href="../propertysets/CTCS_Properties.aadl#CTCS_Properties::MA_Size"/>
+            </ownedListElement>
+          </ownedValue>
+        </ownedValue>
+      </ownedPropertyAssociation>
+      <feature xsi:type="aadl2:DataPort" href="../packages/MA.aadl#//@ownedPublicSection/@ownedClassifier.10/@ownedDataPort.1"/>
+    </featureInstance>
+    <subcomponent xsi:type="aadl2:DeviceSubcomponent" href="../packages/MA.aadl#//@ownedPublicSection/@ownedClassifier.1/@ownedDeviceSubcomponent.0"/>
+    <index>0</index>
+  </componentInstance>
+  <componentInstance xmi:id="_4ZmrAREUEeS2xf4ZJVwONA" name="Controller" category="process">
+    <featureInstance xmi:id="_4Zn5JBEUEeS2xf4ZJVwONA" name="ps">
+      <feature xsi:type="aadl2:DataPort" href="../packages/MA.aadl#//@ownedPublicSection/@ownedClassifier.6/@ownedDataPort.0"/>
+    </featureInstance>
+    <featureInstance xmi:id="_4Zn5JREUEeS2xf4ZJVwONA" name="pv">
+      <ownedPropertyAssociation xmi:id="_4Z9QUBEUEeS2xf4ZJVwONA">
+        <property href="../../Plugin_Resources/BLESS.aadl#BLESS::Typed"/>
+        <ownedValue xmi:id="_4Z93YBEUEeS2xf4ZJVwONA">
+          <ownedValue xsi:type="aadl2:StringLiteral" xmi:id="_4Z93YREUEeS2xf4ZJVwONA" value="real"/>
+        </ownedValue>
+      </ownedPropertyAssociation>
+      <ownedPropertyAssociation xmi:id="_4Z93YhEUEeS2xf4ZJVwONA">
+        <property href="../../Plugin_Resources/Data_Model.aadl#Data_Model::Data_Representation"/>
+        <ownedValue xmi:id="_4Z93YxEUEeS2xf4ZJVwONA">
+          <ownedValue xsi:type="aadl2:NamedValue" xmi:id="_4Z93ZBEUEeS2xf4ZJVwONA">
+            <namedValue xsi:type="aadl2:EnumerationLiteral" href="../../Plugin_Resources/Data_Model.aadl#//@ownedProperty.4/@ownedPropertyType/@ownedLiteral.4"/>
+          </ownedValue>
+        </ownedValue>
+      </ownedPropertyAssociation>
+      <ownedPropertyAssociation xmi:id="_4Z93ZREUEeS2xf4ZJVwONA">
+        <property href="../../Plugin_Resources/Data_Model.aadl#Data_Model::Measurement_Unit"/>
+        <ownedValue xmi:id="_4Z93ZhEUEeS2xf4ZJVwONA">
+          <ownedValue xsi:type="aadl2:StringLiteral" xmi:id="_4Z93ZxEUEeS2xf4ZJVwONA" value="km/h"/>
+        </ownedValue>
+      </ownedPropertyAssociation>
+      <feature xsi:type="aadl2:DataPort" href="../packages/MA.aadl#//@ownedPublicSection/@ownedClassifier.6/@ownedDataPort.1"/>
+    </featureInstance>
+    <featureInstance xmi:id="_4Zn5JhEUEeS2xf4ZJVwONA" name="pa" direction="out">
+      <feature xsi:type="aadl2:DataPort" href="../packages/MA.aadl#//@ownedPublicSection/@ownedClassifier.6/@ownedDataPort.2"/>
+    </featureInstance>
+    <featureInstance xmi:id="_4ZogMBEUEeS2xf4ZJVwONA" name="preq" category="eventDataPort" direction="out">
+      <feature xsi:type="aadl2:EventDataPort" href="../packages/MA.aadl#//@ownedPublicSection/@ownedClassifier.6/@ownedEventDataPort.0"/>
+    </featureInstance>
+    <featureInstance xmi:id="_4ZogMREUEeS2xf4ZJVwONA" name="pma" category="eventDataPort">
+      <ownedPropertyAssociation xmi:id="_4Z-ecBEUEeS2xf4ZJVwONA">
+        <property href="../../Plugin_Resources/BLESS.aadl#BLESS::Typed"/>
+        <ownedValue xmi:id="_4Z-ecREUEeS2xf4ZJVwONA">
+          <ownedValue xsi:type="aadl2:StringLiteral" xmi:id="_4Z8CMREUEeS2xf4ZJVwONA" value="array [CTCS_Types::MA_Size] of CTCS_Types::Segment"/>
+        </ownedValue>
+      </ownedPropertyAssociation>
+      <ownedPropertyAssociation xmi:id="_4Z-echEUEeS2xf4ZJVwONA">
+        <property href="../../Plugin_Resources/Data_Model.aadl#Data_Model::Data_Representation"/>
+        <ownedValue xmi:id="_4Z-ecxEUEeS2xf4ZJVwONA">
+          <ownedValue xsi:type="aadl2:NamedValue" xmi:id="_4Z-edBEUEeS2xf4ZJVwONA">
+            <namedValue xsi:type="aadl2:EnumerationLiteral" href="../../Plugin_Resources/Data_Model.aadl#//@ownedProperty.4/@ownedPropertyType/@ownedLiteral.0"/>
+          </ownedValue>
+        </ownedValue>
+      </ownedPropertyAssociation>
+      <ownedPropertyAssociation xmi:id="_4Z-edREUEeS2xf4ZJVwONA">
+        <property href="../../Plugin_Resources/Data_Model.aadl#Data_Model::Base_Type"/>
+        <ownedValue xmi:id="_4Z-edhEUEeS2xf4ZJVwONA">
+          <ownedValue xsi:type="aadl2:ListValue" xmi:id="_4Z8CNxEUEeS2xf4ZJVwONA">
+            <ownedListElement xsi:type="aadl2:ClassifierValue" xmi:id="_4Z8COBEUEeS2xf4ZJVwONA">
+              <classifier xsi:type="aadl2:DataType" href="../packages/CTCS_Types.aadl#CTCS_Types::Segment"/>
+            </ownedListElement>
+          </ownedValue>
+        </ownedValue>
+      </ownedPropertyAssociation>
+      <ownedPropertyAssociation xmi:id="_4Z-edxEUEeS2xf4ZJVwONA">
+        <property href="../../Plugin_Resources/Data_Model.aadl#Data_Model::Dimension"/>
+        <ownedValue xmi:id="_4Z_FgBEUEeS2xf4ZJVwONA">
+          <ownedValue xsi:type="aadl2:ListValue" xmi:id="_4Z_FgREUEeS2xf4ZJVwONA">
+            <ownedListElement xsi:type="aadl2:NamedValue" xmi:id="_4Z_FghEUEeS2xf4ZJVwONA">
+              <namedValue xsi:type="aadl2:PropertyConstant" href="../propertysets/CTCS_Properties.aadl#CTCS_Properties::MA_Size"/>
+            </ownedListElement>
+          </ownedValue>
+        </ownedValue>
+      </ownedPropertyAssociation>
+      <feature xsi:type="aadl2:EventDataPort" href="../packages/MA.aadl#//@ownedPublicSection/@ownedClassifier.6/@ownedEventDataPort.1"/>
+    </featureInstance>
+    <componentInstance xmi:id="_4ZnSEBEUEeS2xf4ZJVwONA" name="tMA" category="thread">
+      <ownedPropertyAssociation xmi:id="_4Z_FgxEUEeS2xf4ZJVwONA">
+        <property href="../../Plugin_Resources/Thread_Properties.aadl#Thread_Properties::Dispatch_Protocol"/>
+        <ownedValue xmi:id="_4Z_FhBEUEeS2xf4ZJVwONA">
+          <ownedValue xsi:type="aadl2:NamedValue" xmi:id="_4Z_FhREUEeS2xf4ZJVwONA">
+            <namedValue xsi:type="aadl2:EnumerationLiteral" href="../../Plugin_Resources/AADL_Project.aadl#//@ownedPropertyType.3/@ownedLiteral.4"/>
+          </ownedValue>
+        </ownedValue>
+      </ownedPropertyAssociation>
+      <ownedPropertyAssociation xmi:id="_4Z_skBEUEeS2xf4ZJVwONA">
+        <property href="../../Plugin_Resources/Timing_Properties.aadl#Timing_Properties::Period"/>
+        <ownedValue xmi:id="_4Z_skREUEeS2xf4ZJVwONA">
+          <ownedValue xsi:type="aadl2:IntegerLiteral" xmi:id="_4Z_skhEUEeS2xf4ZJVwONA" value="200">
+            <unit href="../../Plugin_Resources/AADL_Project.aadl#//@ownedPropertyType.12/@ownedLiteral.3"/>
+          </ownedValue>
+        </ownedValue>
+      </ownedPropertyAssociation>
+      <featureInstance xmi:id="_4ZnSEREUEeS2xf4ZJVwONA" name="s" dstConnectionInstance="_4ZsKkxEUEeS2xf4ZJVwONA">
+        <feature xsi:type="aadl2:DataPort" href="../packages/MA.aadl#//@ownedPublicSection/@ownedClassifier.8/@ownedDataPort.0"/>
+      </featureInstance>
+      <featureInstance xmi:id="_4Zn5IBEUEeS2xf4ZJVwONA" name="v" dstConnectionInstance="_4ZsxoBEUEeS2xf4ZJVwONA">
+        <ownedPropertyAssociation xmi:id="_4aAToBEUEeS2xf4ZJVwONA">
+          <property href="../../Plugin_Resources/BLESS.aadl#BLESS::Typed"/>
+          <ownedValue xmi:id="_4aAToREUEeS2xf4ZJVwONA">
+            <ownedValue xsi:type="aadl2:StringLiteral" xmi:id="_4Z93YREUEeS2xf4ZJVwONA" value="real"/>
+          </ownedValue>
+        </ownedPropertyAssociation>
+        <ownedPropertyAssociation xmi:id="_4aATohEUEeS2xf4ZJVwONA">
+          <property href="../../Plugin_Resources/Data_Model.aadl#Data_Model::Data_Representation"/>
+          <ownedValue xmi:id="_4aAToxEUEeS2xf4ZJVwONA">
+            <ownedValue xsi:type="aadl2:NamedValue" xmi:id="_4aATpBEUEeS2xf4ZJVwONA">
+              <namedValue xsi:type="aadl2:EnumerationLiteral" href="../../Plugin_Resources/Data_Model.aadl#//@ownedProperty.4/@ownedPropertyType/@ownedLiteral.4"/>
+            </ownedValue>
+          </ownedValue>
+        </ownedPropertyAssociation>
+        <ownedPropertyAssociation xmi:id="_4aATpREUEeS2xf4ZJVwONA">
+          <property href="../../Plugin_Resources/Data_Model.aadl#Data_Model::Measurement_Unit"/>
+          <ownedValue xmi:id="_4aATphEUEeS2xf4ZJVwONA">
+            <ownedValue xsi:type="aadl2:StringLiteral" xmi:id="_4Z93ZxEUEeS2xf4ZJVwONA" value="km/h"/>
+          </ownedValue>
+        </ownedPropertyAssociation>
+        <feature xsi:type="aadl2:DataPort" href="../packages/MA.aadl#//@ownedPublicSection/@ownedClassifier.8/@ownedDataPort.1"/>
+      </featureInstance>
+      <featureInstance xmi:id="_4Zn5IREUEeS2xf4ZJVwONA" name="a" srcConnectionInstance="_4ZrjgBEUEeS2xf4ZJVwONA" direction="out">
+        <feature xsi:type="aadl2:DataPort" href="../packages/MA.aadl#//@ownedPublicSection/@ownedClassifier.8/@ownedDataPort.2"/>
+      </featureInstance>
+      <featureInstance xmi:id="_4Zn5IhEUEeS2xf4ZJVwONA" name="req" srcConnectionInstance="_4ZsKkBEUEeS2xf4ZJVwONA" category="eventDataPort" direction="out">
+        <ownedPropertyAssociation xmi:id="_4aA6sBEUEeS2xf4ZJVwONA">
+          <property href="../../Plugin_Resources/BLESS.aadl#BLESS::Assertion"/>
+          <ownedValue xmi:id="_4aA6sREUEeS2xf4ZJVwONA">
+            <ownedValue xsi:type="aadl2:StringLiteral" xmi:id="_QeF0MhEUEeS2xf4ZJVwONA" value="&lt;&lt;s=0 or s>=iSeg.e>>"/>
+          </ownedValue>
+        </ownedPropertyAssociation>
+        <feature xsi:type="aadl2:EventDataPort" href="../packages/MA.aadl#//@ownedPublicSection/@ownedClassifier.8/@ownedEventDataPort.0"/>
+      </featureInstance>
+      <featureInstance xmi:id="_4Zn5IxEUEeS2xf4ZJVwONA" name="ma" dstConnectionInstance="_4ZqVYBEUEeS2xf4ZJVwONA" category="eventDataPort">
+        <ownedPropertyAssociation xmi:id="_4aBhwBEUEeS2xf4ZJVwONA">
+          <property href="../../Plugin_Resources/BLESS.aadl#BLESS::Typed"/>
+          <ownedValue xmi:id="_4aBhwREUEeS2xf4ZJVwONA">
+            <ownedValue xsi:type="aadl2:StringLiteral" xmi:id="_4Z8CMREUEeS2xf4ZJVwONA" value="array [CTCS_Types::MA_Size] of CTCS_Types::Segment"/>
+          </ownedValue>
+        </ownedPropertyAssociation>
+        <ownedPropertyAssociation xmi:id="_4aBhwhEUEeS2xf4ZJVwONA">
+          <property href="../../Plugin_Resources/Data_Model.aadl#Data_Model::Data_Representation"/>
+          <ownedValue xmi:id="_4aBhwxEUEeS2xf4ZJVwONA">
+            <ownedValue xsi:type="aadl2:NamedValue" xmi:id="_4aBhxBEUEeS2xf4ZJVwONA">
+              <namedValue xsi:type="aadl2:EnumerationLiteral" href="../../Plugin_Resources/Data_Model.aadl#//@ownedProperty.4/@ownedPropertyType/@ownedLiteral.0"/>
+            </ownedValue>
+          </ownedValue>
+        </ownedPropertyAssociation>
+        <ownedPropertyAssociation xmi:id="_4aBhxREUEeS2xf4ZJVwONA">
+          <property href="../../Plugin_Resources/Data_Model.aadl#Data_Model::Base_Type"/>
+          <ownedValue xmi:id="_4aBhxhEUEeS2xf4ZJVwONA">
+            <ownedValue xsi:type="aadl2:ListValue" xmi:id="_4Z8CNxEUEeS2xf4ZJVwONA">
+              <ownedListElement xsi:type="aadl2:ClassifierValue" xmi:id="_4Z8COBEUEeS2xf4ZJVwONA">
+                <classifier xsi:type="aadl2:DataType" href="../packages/CTCS_Types.aadl#CTCS_Types::Segment"/>
+              </ownedListElement>
+            </ownedValue>
+          </ownedValue>
+        </ownedPropertyAssociation>
+        <ownedPropertyAssociation xmi:id="_4aBhxxEUEeS2xf4ZJVwONA">
+          <property href="../../Plugin_Resources/Data_Model.aadl#Data_Model::Dimension"/>
+          <ownedValue xmi:id="_4aBhyBEUEeS2xf4ZJVwONA">
+            <ownedValue xsi:type="aadl2:ListValue" xmi:id="_4aBhyREUEeS2xf4ZJVwONA">
+              <ownedListElement xsi:type="aadl2:NamedValue" xmi:id="_4aBhyhEUEeS2xf4ZJVwONA">
+                <namedValue xsi:type="aadl2:PropertyConstant" href="../propertysets/CTCS_Properties.aadl#CTCS_Properties::MA_Size"/>
+              </ownedListElement>
+            </ownedValue>
+          </ownedValue>
+        </ownedPropertyAssociation>
+        <ownedPropertyAssociation xmi:id="_4aBhyxEUEeS2xf4ZJVwONA">
+          <property href="../../Plugin_Resources/BLESS.aadl#BLESS::Assertion"/>
+          <ownedValue xmi:id="_4aBhzBEUEeS2xf4ZJVwONA">
+            <ownedValue xsi:type="aadl2:StringLiteral" xmi:id="_QeGbTREUEeS2xf4ZJVwONA" value="&lt;&lt;CHECKV1()>>"/>
+          </ownedValue>
+        </ownedPropertyAssociation>
+        <feature xsi:type="aadl2:EventDataPort" href="../packages/MA.aadl#//@ownedPublicSection/@ownedClassifier.8/@ownedEventDataPort.1"/>
+      </featureInstance>
+      <subcomponent xsi:type="aadl2:ThreadSubcomponent" href="../packages/MA.aadl#//@ownedPublicSection/@ownedClassifier.7/@ownedThreadSubcomponent.0"/>
+      <index>0</index>
+    </componentInstance>
+    <subcomponent xsi:type="aadl2:ProcessSubcomponent" href="../packages/MA.aadl#//@ownedPublicSection/@ownedClassifier.1/@ownedProcessSubcomponent.0"/>
+    <index>0</index>
+  </componentInstance>
+  <componentInstance xmi:id="_4ZogMhEUEeS2xf4ZJVwONA" name="Train" category="system">
+    <featureInstance xmi:id="_4ZogMxEUEeS2xf4ZJVwONA" name="ta" dstConnectionInstance="_4ZrjgBEUEeS2xf4ZJVwONA">
+      <feature xsi:type="aadl2:DataPort" href="../packages/MA.aadl#//@ownedPublicSection/@ownedClassifier.4/@ownedDataPort.0"/>
+    </featureInstance>
+    <featureInstance xmi:id="_4ZpHQBEUEeS2xf4ZJVwONA" name="ts" srcConnectionInstance="_4ZsKkxEUEeS2xf4ZJVwONA" direction="out">
+      <feature xsi:type="aadl2:DataPort" href="../packages/MA.aadl#//@ownedPublicSection/@ownedClassifier.4/@ownedDataPort.1"/>
+    </featureInstance>
+    <featureInstance xmi:id="_4ZpHQREUEeS2xf4ZJVwONA" name="tv" srcConnectionInstance="_4ZsxoBEUEeS2xf4ZJVwONA" direction="out">
+      <ownedPropertyAssociation xmi:id="_4aCv4BEUEeS2xf4ZJVwONA">
+        <property href="../../Plugin_Resources/BLESS.aadl#BLESS::Typed"/>
+        <ownedValue xmi:id="_4aCv4REUEeS2xf4ZJVwONA">
+          <ownedValue xsi:type="aadl2:StringLiteral" xmi:id="_4Z93YREUEeS2xf4ZJVwONA" value="real"/>
+        </ownedValue>
+      </ownedPropertyAssociation>
+      <ownedPropertyAssociation xmi:id="_4aCv4hEUEeS2xf4ZJVwONA">
+        <property href="../../Plugin_Resources/Data_Model.aadl#Data_Model::Data_Representation"/>
+        <ownedValue xmi:id="_4aCv4xEUEeS2xf4ZJVwONA">
+          <ownedValue xsi:type="aadl2:NamedValue" xmi:id="_4aCv5BEUEeS2xf4ZJVwONA">
+            <namedValue xsi:type="aadl2:EnumerationLiteral" href="../../Plugin_Resources/Data_Model.aadl#//@ownedProperty.4/@ownedPropertyType/@ownedLiteral.4"/>
+          </ownedValue>
+        </ownedValue>
+      </ownedPropertyAssociation>
+      <ownedPropertyAssociation xmi:id="_4aDW8BEUEeS2xf4ZJVwONA">
+        <property href="../../Plugin_Resources/Data_Model.aadl#Data_Model::Measurement_Unit"/>
+        <ownedValue xmi:id="_4aDW8REUEeS2xf4ZJVwONA">
+          <ownedValue xsi:type="aadl2:StringLiteral" xmi:id="_4Z93ZxEUEeS2xf4ZJVwONA" value="km/h"/>
+        </ownedValue>
+      </ownedPropertyAssociation>
+      <feature xsi:type="aadl2:DataPort" href="../packages/MA.aadl#//@ownedPublicSection/@ownedClassifier.4/@ownedDataPort.2"/>
+    </featureInstance>
+    <subcomponent xsi:type="aadl2:SystemSubcomponent" href="../packages/MA.aadl#//@ownedPublicSection/@ownedClassifier.1/@ownedSystemSubcomponent.0"/>
+    <index>0</index>
+  </componentInstance>
+  <connectionInstance xmi:id="_4ZqVYBEUEeS2xf4ZJVwONA" name="RBC.ma -> Controller.tMA.ma" complete="true" kind="portConnection" destination="_4Zn5IxEUEeS2xf4ZJVwONA" source="_4ZmrABEUEeS2xf4ZJVwONA">
+    <connectionReference xmi:id="_4ZqVYREUEeS2xf4ZJVwONA" context="_4ZgkYBEUEeS2xf4ZJVwONA" source="_4ZmrABEUEeS2xf4ZJVwONA" destination="_4ZogMREUEeS2xf4ZJVwONA">
+      <connection xsi:type="aadl2:PortConnection" href="../packages/MA.aadl#//@ownedPublicSection/@ownedClassifier.1/@ownedPortConnection.4"/>
+    </connectionReference>
+    <connectionReference xmi:id="_4ZqVYhEUEeS2xf4ZJVwONA" context="_4ZmrAREUEeS2xf4ZJVwONA" source="_4ZogMREUEeS2xf4ZJVwONA" destination="_4Zn5IxEUEeS2xf4ZJVwONA">
+      <connection xsi:type="aadl2:PortConnection" href="../packages/MA.aadl#//@ownedPublicSection/@ownedClassifier.7/@ownedPortConnection.4"/>
+    </connectionReference>
+  </connectionInstance>
+  <connectionInstance xmi:id="_4ZrjgBEUEeS2xf4ZJVwONA" name="Controller.tMA.a -> Train.ta" complete="true" kind="portConnection" destination="_4ZogMxEUEeS2xf4ZJVwONA" source="_4Zn5IREUEeS2xf4ZJVwONA">
+    <connectionReference xmi:id="_4ZrjgREUEeS2xf4ZJVwONA" context="_4ZmrAREUEeS2xf4ZJVwONA" source="_4Zn5IREUEeS2xf4ZJVwONA" destination="_4Zn5JhEUEeS2xf4ZJVwONA">
+      <connection xsi:type="aadl2:PortConnection" href="../packages/MA.aadl#//@ownedPublicSection/@ownedClassifier.7/@ownedPortConnection.2"/>
+    </connectionReference>
+    <connectionReference xmi:id="_4ZrjghEUEeS2xf4ZJVwONA" context="_4ZgkYBEUEeS2xf4ZJVwONA" source="_4Zn5JhEUEeS2xf4ZJVwONA" destination="_4ZogMxEUEeS2xf4ZJVwONA">
+      <connection xsi:type="aadl2:PortConnection" href="../packages/MA.aadl#//@ownedPublicSection/@ownedClassifier.1/@ownedPortConnection.2"/>
+    </connectionReference>
+  </connectionInstance>
+  <connectionInstance xmi:id="_4ZsKkBEUEeS2xf4ZJVwONA" name="Controller.tMA.req -> RBC.req" complete="true" kind="portConnection" destination="_4Zlc4BEUEeS2xf4ZJVwONA" source="_4Zn5IhEUEeS2xf4ZJVwONA">
+    <connectionReference xmi:id="_4ZsKkREUEeS2xf4ZJVwONA" context="_4ZmrAREUEeS2xf4ZJVwONA" source="_4Zn5IhEUEeS2xf4ZJVwONA" destination="_4ZogMBEUEeS2xf4ZJVwONA">
+      <connection xsi:type="aadl2:PortConnection" href="../packages/MA.aadl#//@ownedPublicSection/@ownedClassifier.7/@ownedPortConnection.3"/>
+    </connectionReference>
+    <connectionReference xmi:id="_4ZsKkhEUEeS2xf4ZJVwONA" context="_4ZgkYBEUEeS2xf4ZJVwONA" source="_4ZogMBEUEeS2xf4ZJVwONA" destination="_4Zlc4BEUEeS2xf4ZJVwONA">
+      <connection xsi:type="aadl2:PortConnection" href="../packages/MA.aadl#//@ownedPublicSection/@ownedClassifier.1/@ownedPortConnection.3"/>
+    </connectionReference>
+  </connectionInstance>
+  <connectionInstance xmi:id="_4ZsKkxEUEeS2xf4ZJVwONA" name="Train.ts -> Controller.tMA.s" complete="true" kind="portConnection" destination="_4ZnSEREUEeS2xf4ZJVwONA" source="_4ZpHQBEUEeS2xf4ZJVwONA">
+    <connectionReference xmi:id="_4ZsKlBEUEeS2xf4ZJVwONA" context="_4ZgkYBEUEeS2xf4ZJVwONA" source="_4ZpHQBEUEeS2xf4ZJVwONA" destination="_4Zn5JBEUEeS2xf4ZJVwONA">
+      <connection xsi:type="aadl2:PortConnection" href="../packages/MA.aadl#//@ownedPublicSection/@ownedClassifier.1/@ownedPortConnection.0"/>
+    </connectionReference>
+    <connectionReference xmi:id="_4ZsKlREUEeS2xf4ZJVwONA" context="_4ZmrAREUEeS2xf4ZJVwONA" source="_4Zn5JBEUEeS2xf4ZJVwONA" destination="_4ZnSEREUEeS2xf4ZJVwONA">
+      <connection xsi:type="aadl2:PortConnection" href="../packages/MA.aadl#//@ownedPublicSection/@ownedClassifier.7/@ownedPortConnection.0"/>
+    </connectionReference>
+  </connectionInstance>
+  <connectionInstance xmi:id="_4ZsxoBEUEeS2xf4ZJVwONA" name="Train.tv -> Controller.tMA.v" complete="true" kind="portConnection" destination="_4Zn5IBEUEeS2xf4ZJVwONA" source="_4ZpHQREUEeS2xf4ZJVwONA">
+    <connectionReference xmi:id="_4ZsxoREUEeS2xf4ZJVwONA" context="_4ZgkYBEUEeS2xf4ZJVwONA" source="_4ZpHQREUEeS2xf4ZJVwONA" destination="_4Zn5JREUEeS2xf4ZJVwONA">
+      <connection xsi:type="aadl2:PortConnection" href="../packages/MA.aadl#//@ownedPublicSection/@ownedClassifier.1/@ownedPortConnection.1"/>
+    </connectionReference>
+    <connectionReference xmi:id="_4ZsxohEUEeS2xf4ZJVwONA" context="_4ZmrAREUEeS2xf4ZJVwONA" source="_4Zn5JREUEeS2xf4ZJVwONA" destination="_4Zn5IBEUEeS2xf4ZJVwONA">
+      <connection xsi:type="aadl2:PortConnection" href="../packages/MA.aadl#//@ownedPublicSection/@ownedClassifier.7/@ownedPortConnection.1"/>
+    </connectionReference>
+  </connectionInstance>
+  <systemOperationMode xmi:id="_4ZpHQhEUEeS2xf4ZJVwONA" name="No Modes"/>
+  <systemImplementation href="../packages/MA.aadl#MA::sysMA.impl"/>
+</instance:SystemInstance>

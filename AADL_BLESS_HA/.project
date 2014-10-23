@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>CTCS</name>
+	<comment></comment>
+	<projects>
+		<project>bless-predeclared</project>
+		<project>Plugin_Resources</project>
+	</projects>
+	<buildSpec>
+		<buildCommand>
+			<name>org.eclipse.xtext.ui.shared.xtextBuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+	</buildSpec>
+	<natures>
+		<nature>org.eclipse.xtext.ui.shared.xtextNature</nature>
+	</natures>
+	<linkedResources>
+		<link>
+			<name>proof scripts/script.txt</name>
+			<type>1</type>
+			<location>E:/AADL/BLESS/osate2.0.8/script.txt</location>
+		</link>
+	</linkedResources>
+</projectDescription>
