@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="ASCII"?>
+<pi:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:al="http://eclipse.org/graphiti/mm/algorithms" xmlns:pi="http://eclipse.org/graphiti/mm/pictograms" visible="true" gridUnit="10" diagramTypeId="AADL Package" name="MA" snapToGrid="true" version="0.11.0">
+  <properties key="independentObject" value="package MA"/>
+  <graphicsAlgorithm xsi:type="al:Rectangle" background="//@colors.1" foreground="//@colors.0" lineWidth="1" transparency="0.0" width="1000" height="1000"/>
+  <children xsi:type="pi:ContainerShape" visible="true" active="true">
+    <properties key="independentObject" value="classifier MA::Train.impl"/>
+    <properties key="is_layed_out" value="true"/>
+    <graphicsAlgorithm xsi:type="al:RoundedRectangle" lineStyle="UNSPECIFIED" width="100" height="50" x="541" y="116" style="//@styles.1/@styles.0/@styles.0" cornerHeight="25" cornerWidth="25"/>
+    <anchors xsi:type="pi:ChopboxAnchor" outgoingConnections="//@connections.0">
+      <properties key="name" value="chopbox"/>
+    </anchors>
+    <children visible="true">
+      <properties key="independentObject" value="classifier MA::Train.impl"/>
+      <graphicsAlgorithm xsi:type="al:Text" lineStyle="UNSPECIFIED" width="100" height="50" style="//@styles.0" horizontalAlignment="UNSPECIFIED" verticalAlignment="UNSPECIFIED" value="Train.impl"/>
+    </children>
+  </children>
+  <children xsi:type="pi:ContainerShape" visible="true" active="true">
+    <properties key="independentObject" value="classifier MA::RBC"/>
+    <properties key="is_layed_out" value="true"/>
+    <graphicsAlgorithm xsi:type="al:Rectangle" lineStyle="UNSPECIFIED" width="100" height="50" x="145" y="232" style="//@styles.1/@styles.1">
+      <graphicsAlgorithmChildren xsi:type="al:Polygon" lineStyle="UNSPECIFIED" lineVisible="false">
+        <points x="100"/>
+        <points x="100" y="50"/>
+        <points x="93" y="43"/>
+        <points x="93" y="7"/>
+      </graphicsAlgorithmChildren>
+      <graphicsAlgorithmChildren xsi:type="al:Polygon" lineStyle="UNSPECIFIED" lineVisible="false">
+        <points x="100" y="50"/>
+        <points y="50"/>
+        <points x="7" y="43"/>
+        <points x="93" y="43"/>
+      </graphicsAlgorithmChildren>
+      <graphicsAlgorithmChildren xsi:type="al:Rectangle" lineStyle="UNSPECIFIED" width="92" height="42" x="4" y="4" style="//@styles.1/@styles.1"/>
+      <graphicsAlgorithmChildren xsi:type="al:Polyline" lineStyle="UNSPECIFIED" style="//@styles.1/@styles.1">
+        <points/>
+        <points x="7" y="7"/>
+      </graphicsAlgorithmChildren>
+      <graphicsAlgorithmChildren xsi:type="al:Polyline" lineStyle="UNSPECIFIED" style="//@styles.1/@styles.1">
+        <points x="100"/>
+        <points x="93" y="7"/>
+      </graphicsAlgorithmChildren>
+      <graphicsAlgorithmChildren xsi:type="al:Polyline" lineStyle="UNSPECIFIED" style="//@styles.1/@styles.1">
+        <points x="93" y="43"/>
+        <points x="100" y="50"/>
+      </graphicsAlgorithmChildren>
+      <graphicsAlgorithmChildren xsi:type="al:Polyline" lineStyle="UNSPECIFIED" style="//@styles.1/@styles.1">
+        <points y="50"/>
+        <points x="7" y="43"/>
+      </graphicsAlgorithmChildren>
+    </graphicsAlgorithm>
+    <anchors xsi:type="pi:ChopboxAnchor" incomingConnections="//@connections.2">
+      <properties key="name" value="chopbox"/>
+    </anchors>
+    <children visible="true">
+      <properties key="independentObject" value="classifier MA::RBC"/>
+      <graphicsAlgorithm xsi:type="al:Text" lineStyle="UNSPECIFIED" width="100" height="50" style="//@styles.0" horizontalAlignment="UNSPECIFIED" verticalAlignment="UNSPECIFIED" value="RBC"/>
+    </children>
+  </children>
+  <children xsi:type="pi:ContainerShape" visible="true" active="true">
+    <properties key="independentObject" value="classifier MA::pMA"/>
+    <properties key="is_layed_out" value="true"/>
+    <graphicsAlgorithm xsi:type="al:Polygon" lineStyle="UNSPECIFIED" width="100" height="50" x="636" y="232" style="//@styles.1/@styles.2">
+      <points x="20"/>
+      <points x="100"/>
+      <points x="80" y="50"/>
+      <points y="50"/>
+    </graphicsAlgorithm>
+    <anchors xsi:type="pi:ChopboxAnchor" incomingConnections="//@connections.4">
+      <properties key="name" value="chopbox"/>
+    </anchors>
+    <children visible="true">
+      <properties key="independentObject" value="classifier MA::pMA"/>
+      <graphicsAlgorithm xsi:type="al:Text" lineStyle="UNSPECIFIED" width="100" height="50" style="//@styles.0" horizontalAlignment="UNSPECIFIED" verticalAlignment="UNSPECIFIED" value="pMA"/>
+    </children>
+  </children>
+  <children xsi:type="pi:ContainerShape" visible="true" active="true">
+    <properties key="independentObject" value="classifier MA::TCC.impl"/>
+    <properties key="is_layed_out" value="true"/>
+    <graphicsAlgorithm xsi:type="al:Rectangle" lineStyle="UNSPECIFIED" width="100" height="50" x="381" y="116" style="//@styles.1/@styles.1/@styles.0">
+      <graphicsAlgorithmChildren xsi:type="al:Polygon" lineStyle="UNSPECIFIED" lineVisible="false">
+        <points x="100"/>
+        <points x="100" y="50"/>
+        <points x="93" y="43"/>
+        <points x="93" y="7"/>
+      </graphicsAlgorithmChildren>
+      <graphicsAlgorithmChildren xsi:type="al:Polygon" lineStyle="UNSPECIFIED" lineVisible="false">
+        <points x="100" y="50"/>
+        <points y="50"/>
+        <points x="7" y="43"/>
+        <points x="93" y="43"/>
+      </graphicsAlgorithmChildren>
+      <graphicsAlgorithmChildren xsi:type="al:Rectangle" lineStyle="UNSPECIFIED" width="92" height="42" x="4" y="4" style="//@styles.1/@styles.1/@styles.0"/>
+      <graphicsAlgorithmChildren xsi:type="al:Polyline" lineStyle="UNSPECIFIED" style="//@styles.1/@styles.1/@styles.0">
+        <points/>
+        <points x="7" y="7"/>
+      </graphicsAlgorithmChildren>
+      <graphicsAlgorithmChildren xsi:type="al:Polyline" lineStyle="UNSPECIFIED" style="//@styles.1/@styles.1/@styles.0">
+        <points x="100"/>
+        <points x="93" y="7"/>
+      </graphicsAlgorithmChildren>
+      <graphicsAlgorithmChildren xsi:type="al:Polyline" lineStyle="UNSPECIFIED" style="//@styles.1/@styles.1/@styles.0">
+        <points x="93" y="43"/>
+        <points x="100" y="50"/>
+      </graphicsAlgorithmChildren>
+      <graphicsAlgorithmChildren xsi:type="al:Polyline" lineStyle="UNSPECIFIED" style="//@styles.1/@styles.1/@styles.0">
+        <points y="50"/>
+        <points x="7" y="43"/>
+      </graphicsAlgorithmChildren>
+    </graphicsAlgorithm>
+    <anchors xsi:type="pi:ChopboxAnchor" outgoingConnections="//@connections.1">
+      <properties key="name" value="chopbox"/>
+    </anchors>
+    <children visible="true">
+      <properties key="independentObject" value="classifier MA::TCC.impl"/>
+      <graphicsAlgorithm xsi:type="al:Text" lineStyle="UNSPECIFIED" width="100" height="50" style="//@styles.0" horizontalAlignment="UNSPECIFIED" verticalAlignment="UNSPECIFIED" value="TCC.impl"/>
+    </children>
+  </children>
+  <children xsi:type="pi:ContainerShape" visible="true" active="true">
+    <properties key="independentObject" value="classifier MA::RBC.impl"/>
+    <properties key="is_layed_out" value="true"/>
+    <graphicsAlgorithm xsi:type="al:Rectangle" lineStyle="UNSPECIFIED" width="100" height="50" x="701" y="116" style="//@styles.1/@styles.1/@styles.0">
+      <graphicsAlgorithmChildren xsi:type="al:Polygon" lineStyle="UNSPECIFIED" lineVisible="false">
+        <points x="100"/>
+        <points x="100" y="50"/>
+        <points x="93" y="43"/>
+        <points x="93" y="7"/>
+      </graphicsAlgorithmChildren>
+      <graphicsAlgorithmChildren xsi:type="al:Polygon" lineStyle="UNSPECIFIED" lineVisible="false">
+        <points x="100" y="50"/>
+        <points y="50"/>
+        <points x="7" y="43"/>
+        <points x="93" y="43"/>
+      </graphicsAlgorithmChildren>
+      <graphicsAlgorithmChildren xsi:type="al:Rectangle" lineStyle="UNSPECIFIED" width="92" height="42" x="4" y="4" style="//@styles.1/@styles.1/@styles.0"/>
+      <graphicsAlgorithmChildren xsi:type="al:Polyline" lineStyle="UNSPECIFIED" style="//@styles.1/@styles.1/@styles.0">
+        <points/>
+        <points x="7" y="7"/>
+      </graphicsAlgorithmChildren>
+      <graphicsAlgorithmChildren xsi:type="al:Polyline" lineStyle="UNSPECIFIED" style="//@styles.1/@styles.1/@styles.0">
+        <points x="100"/>
+        <points x="93" y="7"/>
+      </graphicsAlgorithmChildren>
+      <graphicsAlgorithmChildren xsi:type="al:Polyline" lineStyle="UNSPECIFIED" style="//@styles.1/@styles.1/@styles.0">
+        <points x="93" y="43"/>
+        <points x="100" y="50"/>
+      </graphicsAlgorithmChildren>
+      <graphicsAlgorithmChildren xsi:type="al:Polyline" lineStyle="UNSPECIFIED" style="//@styles.1/@styles.1/@styles.0">
+        <points y="50"/>
+        <points x="7" y="43"/>
+      </graphicsAlgorithmChildren>
+    </graphicsAlgorithm>
+    <anchors xsi:type="pi:ChopboxAnchor" outgoingConnections="//@connections.2">
+      <properties key="name" value="chopbox"/>
+    </anchors>
+    <children visible="true">
+      <properties key="independentObject" value="classifier MA::RBC.impl"/>
+      <graphicsAlgorithm xsi:type="al:Text" lineStyle="UNSPECIFIED" width="100" height="50" style="//@styles.0" horizontalAlignment="UNSPECIFIED" verticalAlignment="UNSPECIFIED" value="RBC.impl"/>
+    </children>
+  </children>
+  <children xsi:type="pi:ContainerShape" visible="true" active="true">
+    <properties key="independentObject" value="classifier MA::sysMA.impl"/>
+    <properties key="is_layed_out" value="true"/>
+    <graphicsAlgorithm xsi:type="al:RoundedRectangle" lineStyle="UNSPECIFIED" width="101" height="50" x="60" y="116" style="//@styles.1/@styles.0/@styles.0" cornerHeight="25" cornerWidth="25"/>
+    <anchors xsi:type="pi:ChopboxAnchor" outgoingConnections="//@connections.3">
+      <properties key="name" value="chopbox"/>
+    </anchors>
+    <children visible="true">
+      <properties key="independentObject" value="classifier MA::sysMA.impl"/>
+      <graphicsAlgorithm xsi:type="al:Text" lineStyle="UNSPECIFIED" width="101" height="50" style="//@styles.0" horizontalAlignment="UNSPECIFIED" verticalAlignment="UNSPECIFIED" value="sysMA.impl"/>
+    </children>
+  </children>
+  <children xsi:type="pi:ContainerShape" visible="true" active="true">
+    <properties key="independentObject" value="classifier MA::tMA"/>
+    <properties key="is_layed_out" value="true"/>
+    <graphicsAlgorithm xsi:type="al:Polygon" lineStyle="UNSPECIFIED" width="100" height="50" x="796" y="232" style="//@styles.1/@styles.3">
+      <points x="20"/>
+      <points x="100"/>
+      <points x="80" y="50"/>
+      <points y="50"/>
+    </graphicsAlgorithm>
+    <anchors xsi:type="pi:ChopboxAnchor" incomingConnections="//@connections.6">
+      <properties key="name" value="chopbox"/>
+    </anchors>
+    <children visible="true">
+      <properties key="independentObject" value="classifier MA::tMA"/>
+      <graphicsAlgorithm xsi:type="al:Text" lineStyle="UNSPECIFIED" width="100" height="50" style="//@styles.0" horizontalAlignment="UNSPECIFIED" verticalAlignment="UNSPECIFIED" value="tMA"/>
+    </children>
+  </children>
+  <children xsi:type="pi:ContainerShape" visible="true" active="true">
+    <properties key="independentObject" value="classifier MA::pMA.impl"/>
+    <properties key="is_layed_out" value="true"/>
+    <graphicsAlgorithm xsi:type="al:Polygon" lineStyle="UNSPECIFIED" width="100" height="50" x="861" y="116" style="//@styles.1/@styles.2/@styles.0">
+      <points x="20"/>
+      <points x="100"/>
+      <points x="80" y="50"/>
+      <points y="50"/>
+    </graphicsAlgorithm>
+    <anchors xsi:type="pi:ChopboxAnchor" outgoingConnections="//@connections.4">
+      <properties key="name" value="chopbox"/>
+    </anchors>
+    <children visible="true">
+      <properties key="independentObject" value="classifier MA::pMA.impl"/>
+      <graphicsAlgorithm xsi:type="al:Text" lineStyle="UNSPECIFIED" width="100" height="50" style="//@styles.0" horizontalAlignment="UNSPECIFIED" verticalAlignment="UNSPECIFIED" value="pMA.impl"/>
+    </children>
+  </children>
+  <children xsi:type="pi:ContainerShape" visible="true" active="true">
+    <properties key="independentObject" value="classifier MA::abTrain.impl"/>
+    <properties key="is_layed_out" value="true"/>
+    <graphicsAlgorithm xsi:type="al:Rectangle" lineStyle="UNSPECIFIED" width="111" height="50" x="305" y="232" style="//@styles.1/@styles.4/@styles.0"/>
+    <anchors xsi:type="pi:ChopboxAnchor" outgoingConnections="//@connections.5">
+      <properties key="name" value="chopbox"/>
+    </anchors>
+    <children visible="true">
+      <properties key="independentObject" value="classifier MA::abTrain.impl"/>
+      <graphicsAlgorithm xsi:type="al:Text" lineStyle="UNSPECIFIED" width="111" height="50" style="//@styles.0" horizontalAlignment="UNSPECIFIED" verticalAlignment="UNSPECIFIED" value="abTrain.impl"/>
+    </children>
+  </children>
+  <children xsi:type="pi:ContainerShape" visible="true" active="true">
+    <properties key="independentObject" value="classifier MA::abTrain"/>
+    <properties key="is_layed_out" value="true"/>
+    <graphicsAlgorithm xsi:type="al:Rectangle" lineStyle="UNSPECIFIED" width="100" height="50" x="435" y="348" style="//@styles.1/@styles.4"/>
+    <anchors xsi:type="pi:ChopboxAnchor" incomingConnections="//@connections.5 //@connections.7">
+      <properties key="name" value="chopbox"/>
+    </anchors>
+    <children visible="true">
+      <properties key="independentObject" value="classifier MA::abTrain"/>
+      <graphicsAlgorithm xsi:type="al:Text" lineStyle="UNSPECIFIED" width="100" height="50" style="//@styles.0" horizontalAlignment="UNSPECIFIED" verticalAlignment="UNSPECIFIED" value="abTrain"/>
+    </children>
+  </children>
+  <children xsi:type="pi:ContainerShape" visible="true" active="true">
+    <properties key="independentObject" value="classifier MA::tMA.impl"/>
+    <properties key="is_layed_out" value="true"/>
+    <graphicsAlgorithm xsi:type="al:Polygon" lineStyle="UNSPECIFIED" width="100" height="50" x="221" y="116" style="//@styles.1/@styles.3/@styles.0">
+      <points x="20"/>
+      <points x="100"/>
+      <points x="80" y="50"/>
+      <points y="50"/>
+    </graphicsAlgorithm>
+    <anchors xsi:type="pi:ChopboxAnchor" outgoingConnections="//@connections.6">
+      <properties key="name" value="chopbox"/>
+    </anchors>
+    <children visible="true">
+      <properties key="independentObject" value="classifier MA::tMA.impl"/>
+      <graphicsAlgorithm xsi:type="al:Text" lineStyle="UNSPECIFIED" width="100" height="50" style="//@styles.0" horizontalAlignment="UNSPECIFIED" verticalAlignment="UNSPECIFIED" value="tMA.impl"/>
+    </children>
+  </children>
+  <children xsi:type="pi:ContainerShape" visible="true" active="true">
+    <properties key="independentObject" value="classifier MA::Train"/>
+    <properties key="is_layed_out" value="true"/>
+    <graphicsAlgorithm xsi:type="al:RoundedRectangle" lineStyle="UNSPECIFIED" width="100" height="50" x="-15" y="232" style="//@styles.1/@styles.0" cornerHeight="25" cornerWidth="25"/>
+    <anchors xsi:type="pi:ChopboxAnchor" outgoingConnections="//@connections.7" incomingConnections="//@connections.0">
+      <properties key="name" value="chopbox"/>
+    </anchors>
+    <children visible="true">
+      <properties key="independentObject" value="classifier MA::Train"/>
+      <graphicsAlgorithm xsi:type="al:Text" lineStyle="UNSPECIFIED" width="100" height="50" style="//@styles.0" horizontalAlignment="UNSPECIFIED" verticalAlignment="UNSPECIFIED" value="Train"/>
+    </children>
+  </children>
+  <children xsi:type="pi:ContainerShape" visible="true" active="true">
+    <properties key="independentObject" value="classifier MA::sysMA"/>
+    <properties key="is_layed_out" value="true"/>
+    <graphicsAlgorithm xsi:type="al:RoundedRectangle" lineStyle="UNSPECIFIED" width="100" height="50" x="476" y="232" style="//@styles.1/@styles.0" cornerHeight="25" cornerWidth="25"/>
+    <anchors xsi:type="pi:ChopboxAnchor" incomingConnections="//@connections.3">
+      <properties key="name" value="chopbox"/>
+    </anchors>
+    <children visible="true">
+      <properties key="independentObject" value="classifier MA::sysMA"/>
+      <graphicsAlgorithm xsi:type="al:Text" lineStyle="UNSPECIFIED" width="100" height="50" style="//@styles.0" horizontalAlignment="UNSPECIFIED" verticalAlignment="UNSPECIFIED" value="sysMA"/>
+    </children>
+  </children>
+  <children xsi:type="pi:ContainerShape" visible="true" active="true">
+    <properties key="independentObject" value="classifier MA::TCC"/>
+    <properties key="is_layed_out" value="true"/>
+    <graphicsAlgorithm xsi:type="al:Rectangle" lineStyle="UNSPECIFIED" width="100" height="50" x="956" y="232" style="//@styles.1/@styles.1">
+      <graphicsAlgorithmChildren xsi:type="al:Polygon" lineStyle="UNSPECIFIED" lineVisible="false">
+        <points x="100"/>
+        <points x="100" y="50"/>
+        <points x="93" y="43"/>
+        <points x="93" y="7"/>
+      </graphicsAlgorithmChildren>
+      <graphicsAlgorithmChildren xsi:type="al:Polygon" lineStyle="UNSPECIFIED" lineVisible="false">
+        <points x="100" y="50"/>
+        <points y="50"/>
+        <points x="7" y="43"/>
+        <points x="93" y="43"/>
+      </graphicsAlgorithmChildren>
+      <graphicsAlgorithmChildren xsi:type="al:Rectangle" lineStyle="UNSPECIFIED" width="92" height="42" x="4" y="4" style="//@styles.1/@styles.1"/>
+      <graphicsAlgorithmChildren xsi:type="al:Polyline" lineStyle="UNSPECIFIED" style="//@styles.1/@styles.1">
+        <points/>
+        <points x="7" y="7"/>
+      </graphicsAlgorithmChildren>
+      <graphicsAlgorithmChildren xsi:type="al:Polyline" lineStyle="UNSPECIFIED" style="//@styles.1/@styles.1">
+        <points x="100"/>
+        <points x="93" y="7"/>
+      </graphicsAlgorithmChildren>
+      <graphicsAlgorithmChildren xsi:type="al:Polyline" lineStyle="UNSPECIFIED" style="//@styles.1/@styles.1">
+        <points x="93" y="43"/>
+        <points x="100" y="50"/>
+      </graphicsAlgorithmChildren>
+      <graphicsAlgorithmChildren xsi:type="al:Polyline" lineStyle="UNSPECIFIED" style="//@styles.1/@styles.1">
+        <points y="50"/>
+        <points x="7" y="43"/>
+      </graphicsAlgorithmChildren>
+    </graphicsAlgorithm>
+    <anchors xsi:type="pi:ChopboxAnchor" incomingConnections="//@connections.1">
+      <properties key="name" value="chopbox"/>
+    </anchors>
+    <children visible="true">
+      <properties key="independentObject" value="classifier MA::TCC"/>
+      <graphicsAlgorithm xsi:type="al:Text" lineStyle="UNSPECIFIED" width="100" height="50" style="//@styles.0" horizontalAlignment="UNSPECIFIED" verticalAlignment="UNSPECIFIED" value="TCC"/>
+    </children>
+  </children>
+  <styles foreground="//@colors.2" lineStyle="UNSPECIFIED" filled="false" id="label" font="//@fonts.0"/>
+  <styles background="//@colors.1" foreground="//@colors.2" lineWidth="1" lineVisible="true" transparency="0.0" id="classifier" horizontalAlignment="UNSPECIFIED" verticalAlignment="UNSPECIFIED">
+    <styles lineWidth="2" lineStyle="UNSPECIFIED" id="system" horizontalAlignment="UNSPECIFIED" verticalAlignment="UNSPECIFIED">
+      <styles lineWidth="3" lineStyle="UNSPECIFIED" id="system-implementation" horizontalAlignment="UNSPECIFIED" verticalAlignment="UNSPECIFIED"/>
+    </styles>
+    <styles lineWidth="2" lineStyle="UNSPECIFIED" id="device" horizontalAlignment="UNSPECIFIED" verticalAlignment="UNSPECIFIED">
+      <styles lineWidth="3" lineStyle="UNSPECIFIED" id="device-implementation" horizontalAlignment="UNSPECIFIED" verticalAlignment="UNSPECIFIED"/>
+    </styles>
+    <styles lineWidth="2" lineStyle="UNSPECIFIED" id="process" horizontalAlignment="UNSPECIFIED" verticalAlignment="UNSPECIFIED">
+      <styles lineWidth="3" lineStyle="UNSPECIFIED" id="process-implementation" horizontalAlignment="UNSPECIFIED" verticalAlignment="UNSPECIFIED"/>
+    </styles>
+    <styles lineWidth="2" lineStyle="DASH" id="thread" horizontalAlignment="UNSPECIFIED" verticalAlignment="UNSPECIFIED">
+      <styles lineWidth="3" lineStyle="UNSPECIFIED" id="thread-implementation" horizontalAlignment="UNSPECIFIED" verticalAlignment="UNSPECIFIED"/>
+    </styles>
+    <styles lineWidth="2" lineStyle="DASH" id="abstract" horizontalAlignment="UNSPECIFIED" verticalAlignment="UNSPECIFIED">
+      <styles lineWidth="3" lineStyle="UNSPECIFIED" id="abstract-implementation" horizontalAlignment="UNSPECIFIED" verticalAlignment="UNSPECIFIED"/>
+    </styles>
+  </styles>
+  <styles background="//@colors.1" foreground="//@colors.2" lineWidth="2" lineStyle="DASH" lineVisible="true" id="implements" horizontalAlignment="UNSPECIFIED" verticalAlignment="UNSPECIFIED"/>
+  <styles background="//@colors.1" foreground="//@colors.2" lineWidth="2" lineVisible="true" id="generalization-arrowhead" horizontalAlignment="UNSPECIFIED" verticalAlignment="UNSPECIFIED"/>
+  <styles background="//@colors.1" foreground="//@colors.2" lineWidth="2" lineVisible="true" id="extends" horizontalAlignment="UNSPECIFIED" verticalAlignment="UNSPECIFIED"/>
+  <connections xsi:type="pi:FreeFormConnection" visible="true" active="true" start="//@children.0/@anchors.0" end="//@children.11/@anchors.0">
+    <properties key="independentObject" value="realization MA::Train.impl"/>
+    <graphicsAlgorithm xsi:type="al:Polyline" lineStyle="UNSPECIFIED" style="//@styles.2"/>
+    <connectionDecorators visible="true" locationRelative="true" location="1.0">
+      <graphicsAlgorithm xsi:type="al:Polygon" lineStyle="UNSPECIFIED" style="//@styles.3">
+        <points x="-15" y="10"/>
+        <points/>
+        <points x="-15" y="-10"/>
+      </graphicsAlgorithm>
+    </connectionDecorators>
+  </connections>
+  <connections xsi:type="pi:FreeFormConnection" visible="true" active="true" start="//@children.3/@anchors.0" end="//@children.13/@anchors.0">
+    <properties key="independentObject" value="realization MA::TCC.impl"/>
+    <graphicsAlgorithm xsi:type="al:Polyline" lineStyle="UNSPECIFIED" style="//@styles.2"/>
+    <connectionDecorators visible="true" locationRelative="true" location="1.0">
+      <graphicsAlgorithm xsi:type="al:Polygon" lineStyle="UNSPECIFIED" style="//@styles.3">
+        <points x="-15" y="10"/>
+        <points/>
+        <points x="-15" y="-10"/>
+      </graphicsAlgorithm>
+    </connectionDecorators>
+  </connections>
+  <connections xsi:type="pi:FreeFormConnection" visible="true" active="true" start="//@children.4/@anchors.0" end="//@children.1/@anchors.0">
+    <properties key="independentObject" value="realization MA::RBC.impl"/>
+    <graphicsAlgorithm xsi:type="al:Polyline" lineStyle="UNSPECIFIED" style="//@styles.2"/>
+    <connectionDecorators visible="true" locationRelative="true" location="1.0">
+      <graphicsAlgorithm xsi:type="al:Polygon" lineStyle="UNSPECIFIED" style="//@styles.3">
+        <points x="-15" y="10"/>
+        <points/>
+        <points x="-15" y="-10"/>
+      </graphicsAlgorithm>
+    </connectionDecorators>
+  </connections>
+  <connections xsi:type="pi:FreeFormConnection" visible="true" active="true" start="//@children.5/@anchors.0" end="//@children.12/@anchors.0">
+    <properties key="independentObject" value="realization MA::sysMA.impl"/>
+    <graphicsAlgorithm xsi:type="al:Polyline" lineStyle="UNSPECIFIED" style="//@styles.2"/>
+    <connectionDecorators visible="true" locationRelative="true" location="1.0">
+      <graphicsAlgorithm xsi:type="al:Polygon" lineStyle="UNSPECIFIED" style="//@styles.3">
+        <points x="-15" y="10"/>
+        <points/>
+        <points x="-15" y="-10"/>
+      </graphicsAlgorithm>
+    </connectionDecorators>
+  </connections>
+  <connections xsi:type="pi:FreeFormConnection" visible="true" active="true" start="//@children.7/@anchors.0" end="//@children.2/@anchors.0">
+    <properties key="independentObject" value="realization MA::pMA.impl"/>
+    <graphicsAlgorithm xsi:type="al:Polyline" lineStyle="UNSPECIFIED" style="//@styles.2"/>
+    <connectionDecorators visible="true" locationRelative="true" location="1.0">
+      <graphicsAlgorithm xsi:type="al:Polygon" lineStyle="UNSPECIFIED" style="//@styles.3">
+        <points x="-15" y="10"/>
+        <points/>
+        <points x="-15" y="-10"/>
+      </graphicsAlgorithm>
+    </connectionDecorators>
+  </connections>
+  <connections xsi:type="pi:FreeFormConnection" visible="true" active="true" start="//@children.8/@anchors.0" end="//@children.9/@anchors.0">
+    <properties key="independentObject" value="realization MA::abTrain.impl"/>
+    <graphicsAlgorithm xsi:type="al:Polyline" lineStyle="UNSPECIFIED" style="//@styles.2"/>
+    <connectionDecorators visible="true" locationRelative="true" location="1.0">
+      <graphicsAlgorithm xsi:type="al:Polygon" lineStyle="UNSPECIFIED" style="//@styles.3">
+        <points x="-15" y="10"/>
+        <points/>
+        <points x="-15" y="-10"/>
+      </graphicsAlgorithm>
+    </connectionDecorators>
+  </connections>
+  <connections xsi:type="pi:FreeFormConnection" visible="true" active="true" start="//@children.10/@anchors.0" end="//@children.6/@anchors.0">
+    <properties key="independentObject" value="realization MA::tMA.impl"/>
+    <graphicsAlgorithm xsi:type="al:Polyline" lineStyle="UNSPECIFIED" style="//@styles.2"/>
+    <connectionDecorators visible="true" locationRelative="true" location="1.0">
+      <graphicsAlgorithm xsi:type="al:Polygon" lineStyle="UNSPECIFIED" style="//@styles.3">
+        <points x="-15" y="10"/>
+        <points/>
+        <points x="-15" y="-10"/>
+      </graphicsAlgorithm>
+    </connectionDecorators>
+  </connections>
+  <connections xsi:type="pi:FreeFormConnection" visible="true" active="true" start="//@children.11/@anchors.0" end="//@children.9/@anchors.0">
+    <properties key="independentObject" value="type_extension MA::Train"/>
+    <graphicsAlgorithm xsi:type="al:Polyline" lineStyle="UNSPECIFIED" style="//@styles.4"/>
+    <connectionDecorators visible="true" locationRelative="true" location="1.0">
+      <graphicsAlgorithm xsi:type="al:Polygon" lineStyle="UNSPECIFIED" style="//@styles.3">
+        <points x="-15" y="10"/>
+        <points/>
+        <points x="-15" y="-10"/>
+      </graphicsAlgorithm>
+    </connectionDecorators>
+  </connections>
+  <colors red="227" green="238" blue="249"/>
+  <colors red="255" green="255" blue="255"/>
+  <colors/>
+  <fonts name="Arial" size="10" bold="true"/>
+</pi:Diagram>
