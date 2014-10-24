@@ -1,0 +1,11 @@
+For SCIS2014 Paper;
+1. Folder HHL contains the HCSP model annotated with HHL specification in the "model.thy" file.
+2. "model.thy"  also constains the system level proof of the MA_System.
+3. HHL can be downloaded from lcs.ios.ac.cn~znj/HHLProver.
+4. Folder AADL_BLESS_HA contains the complete AADL model with BLESS and Hybrid annex specification in "Models" folder.
+5. The "diagram: folder contains AADL diagrams
+6. The proof script used for behavior verification of the controller component is in the "proofscript" folder.
+7. "proofTheorem" folder contains the complete set of the proof theorems in relation with proof obligations.
+8. Folder "propertysets" contains the declared property sets.
+9. ".project" is a project file to be used by the OSATE2 tool set.
+10. BLESS proof tool with Hybrid Annex support can be download from the http://bless.santoslab.org/node/5
