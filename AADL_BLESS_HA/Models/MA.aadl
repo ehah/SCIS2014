@@ -10,13 +10,15 @@ subcomponents
 Train: abstract Train.impl;
 pController: process pController.impl;
 RBC : device RBC.impl;
+--DMI : device DMI.impl;
 connections
 conn_position: port Train.ts -> pController.ps;
 conn_velocity: port Train.tv -> pController.pv;
 conn_acc: port pController.pa -> Train.ta;
-conn_req: port pController.preq -> RBC.r;
-conn_ma: port RBC.m -> pController.pma;
-conn_ea: port RBC.ea -> pController.ea;
+conn_req: port pController.pr -> RBC.r;
+conn_ma: port RBC.m -> pController.pm;
+conn_ea: port RBC.ea -> pController.pea;
+--conn_msg : port pController.pmsg -> DMI.msg;
 end sysMA.impl;
 
 -----Train abstract component---------
@@ -33,17 +35,17 @@ abstract implementation Train.impl
 annex hybrid{**
 	
   variables
-   s : CTCS_Types::Position -- train position
-   v : CTCS_Types::Velocity -- train velocity
-   a : CTCS_Types::Acceleration --train acceleration
+   ts : CTCS_Types::Position -- train position
+   tv : CTCS_Types::Velocity -- train velocity
+   ta : CTCS_Types::Acceleration --train acceleration
    t : CTCS_Types::Time     -- train clock time
   constants
    b = 1 mpss    --maximum deceleration of the train, assumed as 1 mpss
   behavior
-   Train ::= 'DT 1 s = v' & 'DT 1 v = a' & 'DT 1 t = 1'
-             [[> ts!(s), tv!(v),ta?(a) ]]> Continue
+   Train ::= 'DT 1 ts = tv' & 'DT 1 tv = ta' & 'DT 1 t = 1'
+             [[> ts!(ts), tv!(tv),ta?(ta) ]]> Continue
    Continue ::= skip
-   RunningTrain ::= s:= 0 & v:=0 & a:=0 & REPEAT(Train)
+   RunningTrain ::= ts:= 0 & tv:=0 & ta:=0 & REPEAT(Train)
 **};
 end Train.impl;
 
@@ -53,9 +55,10 @@ features
 ps: in data port CTCS_Types::Position; 
 pv: in data port CTCS_Types::Velocity; 
 pa : out data port  CTCS_Types::Acceleration;     --check - {BLESS::Assertion=> "<<TDELAY()>>";};
-preq: out event port ; --check - {BLESS::Assertion=> "<<s=0 or s>=iSeg.e>>";};  --make sure iSeg must be the second last segment here, req has EOA
-ea: in event data port CTCS_Types::EOA;
-pma: in event data port CTCS_Types::MovementAuthority; --check - {BLESS::Assertion=> "<<CHECKV1()>>";} ;
+pr: out event port ; --check - {BLESS::Assertion=> "<<s=0 or s>=iSeg.e>>";};  --make sure iSeg must be the second last segment here, req has EOA
+pea: in data port CTCS_Types::EOA;
+pm: in event data port CTCS_Types::MovementAuthority; --check - {BLESS::Assertion=> "<<CHECKV1()>>";} ;
+--pmsg : out event data port  CTCS_Types::DMI_Message;
 end pController;
 process implementation pController.impl
 subcomponents
@@ -64,21 +67,21 @@ connections
 conn_s: port ps->Controller.cs; 
 conn_v: port pv->Controller.cv;
 conn_a: port Controller.ca ->pa;
-conn_req: port Controller.r->preq;
-conn_ma: port pma->Controller.m;
-conn_ea: port  ea ->Controller.ea;
+conn_req: port Controller.r->pr;
+conn_ma: port pm->Controller.m;
+conn_ea: port  pea ->Controller.ea;
+--connn_msg: port Controller.msg ->pmsg;
 end pController.impl;
-
 ------Controller Thread-------------
 thread Controller
 features
 r: out event port  {BLESS::Assertion=> "<<(s=CTCS_Properties::start) or (s>=(e-SR))>>";};  
 m: in event data port CTCS_Types::MovementAuthority {BLESS::Assertion=> "<<:=IMA>>";} ;
-ea: in event data port CTCS_Types::EOA;
+ea: in data port CTCS_Types::EOA;
 cs: in data port CTCS_Types::Position {BLESS::Assertion=> "<<:=POSITION>>";}; 
 cv: in data port CTCS_Types::Velocity {BLESS::Assertion=> "<<:=VELOCITY>>";};  
 ca : out data port  CTCS_Types::Acceleration {BLESS::Assertion=> "<<:=Acceleration()>>";};   
-msg: out event data port CTCS_Types::DMI_Message {BLESS::Assertion=>"<<iMA=null>>";}; --message to DMI
+--msg: out event data port CTCS_Types::DMI_Message {BLESS::Assertion=>"<<iMA=null>>";}; --message to DMI
 properties
 Dispatch_Protocol => Periodic;  
 Period => 200 ms;
@@ -206,7 +209,7 @@ states
 								 };
 
 	
-	T9_MA_NotOk: CMA-[iMA=null]-> RETRY {msg!};
+	T9_MA_NotOk: CMA-[iMA=null]-> RETRY {};
  
     T10_MA_Retry: RETRY -[]-> GMA {(i',s':=i,s)};
 	
@@ -240,5 +243,12 @@ end RBC;
 device implementation RBC.impl
 end RBC.impl;
 
+-----RBC Device----
+--device DMI
+--features
+--msg: in event data port CTCS_Types::DMI_Message;
+--end DMI; 
+--device implementation DMI.impl
+--end DMI.impl;
 end MA;
 
